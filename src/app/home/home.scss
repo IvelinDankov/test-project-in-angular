@@ -1,0 +1,35 @@
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25)),
+    url("https://cdn.pixabay.com/photo/2018/03/18/20/54/food-3238280_1280.jpg");
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  padding-top: 5rem;
+  align-items: center;
+  flex-direction: column;
+  color: #f1f1f1;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero {
+  &__heading,
+  &__description {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+
+  &__btn {
+    margin-top: 3rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: lightgreen;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__btn {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+  }
+}

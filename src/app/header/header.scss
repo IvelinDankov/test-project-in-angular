@@ -1,0 +1,30 @@
+.header {
+  height: 8rem;
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  &__nav {
+  }
+  &__logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(1, 72, 1);
+  }
+  &__list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    list-style: none;
+    font-weight: 600;
+  }
+  &__item {
+  }
+  &__link {
+    text-decoration: none;
+    color: rgb(1, 72, 1);
+  }
+}

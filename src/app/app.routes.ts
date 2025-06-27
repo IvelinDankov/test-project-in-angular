@@ -4,6 +4,7 @@ import { Register } from './user/register/register.js';
 import { Login } from './user/login/login.js';
 import { About } from './about/about.js';
 import { Contact } from './contact/contact.js';
+import { Catalog } from './product/catalog/catalog.js';
 
 export const routes: Routes = [
   {
@@ -25,5 +26,9 @@ export const routes: Routes = [
   {
     path: 'contacts',
     component: Contact,
+  },
+  {
+    path: 'products/catalog',
+    component: Catalog,
   },
 ];

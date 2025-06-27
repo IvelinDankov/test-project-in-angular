@@ -1,8 +1,9 @@
-<form action="/register" method="POST">
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
   <h2>Register</h2>
 
   <label for="username">Username:</label>
   <input
+    formControlName="username"
     type="text"
     id="username"
     name="username"
@@ -14,9 +15,11 @@
 
   <label for="email">Email:</label>
   <input
+    formControlName="email"
     type="email"
     id="email"
     name="email"
+    value="email"
     required
     placeholder="Enter your email"
   />
@@ -25,22 +28,22 @@
 
   <label for="password">Password:</label>
   <input
+    formControlName="password"
     type="password"
     id="password"
     name="password"
     required
-    minlength="6"
     placeholder="Enter your password"
   />
 
   <br /><br />
   <label for="password">Re-Password:</label>
   <input
+    formControlName="rePass"
     type="password"
-    id="password"
+    id="rePass"
     name="rePass"
     required
-    minlength="6"
     placeholder="Enter your password"
   />
 
